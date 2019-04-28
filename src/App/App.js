@@ -5,6 +5,12 @@ import { SessionMaker } from './components/SessionMaker/SessionMaker';
 import Login from './components/Login/Login';
 import Profile from './components/Profile/Profile'
 import ProfilePage from './components/Profile/Profile';
+import CreateEventPage from './components/CreateEventPage/CreateEventPage';
+import Preferences from './components/Preferences/Preferences';
+import InvitePage from './components/InvitePage/InvitePage';
+import Confirmation from './components/Confirmation/Confirmation';
+import LinkPage from './components/LinkPage/LinkPage';
+import WaitingRoom from './components/WaitingRoom/Waitingroom';
 
 
 
@@ -14,24 +20,28 @@ class App extends Component {
     super(props);
     this.state = { 
       viewIndex: 0,
-      currentView: this.VIEWS[this.state.index]
      }
   }
 
   VIEWS = [
     <ProfilePage />,
+    <CreateEventPage/>,
+    <Preferences/>,
+    <InvitePage />,
+    <Confirmation />,
+    <LinkPage />,
+    <WaitingRoom />,  
     
   ]
   backView=()=>{
     if(this.state.viewIndex > 0){
       this.setState({viewIndex: this.state.viewIndex+1})
     }
-    
   }
 
   nextView=() =>{
-      if(this.state.viewIndex > 0){
-        this.setState({viewIndex: this.state.viewIndex+1})
+      if(this.state.viewIndex <= this.VIEWS.length){
+        this.setState({viewIndex: this.state.viewIndex-1})
       }
     }
   
