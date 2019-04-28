@@ -16,10 +16,10 @@ import Header from './components/Header/Header';
 
 
 
-
 class App extends Component {
   constructor(props) {
     super(props);
+
     this.state = { 
       viewIndex: 0,
      }
@@ -48,8 +48,9 @@ class App extends Component {
     }
   }
 
-  render() { 
+  render() {
     return (
+
     <div>
       <Header />
       <div className="App">
@@ -68,5 +69,5 @@ class App extends Component {
   );
   }
 }
- 
+
 export default App;
