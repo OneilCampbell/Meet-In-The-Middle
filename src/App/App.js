@@ -56,14 +56,13 @@ class App extends Component {
       </div>
       {/* <Login/> */}
       <div className='card-container'>
-        <div className='card-view'>
         {this.VIEWS[this.state.viewIndex]}
-        </div>
         <div className='button-nav'>
           <button className={'nav-button'} onClick ={this.backView}>Back</button>
           <button  className={'nav-button'} onClick={this.nextView}>Next</button>
         </div>
       </div>
+     
       <div className='footer'></div>
     </div>
   );

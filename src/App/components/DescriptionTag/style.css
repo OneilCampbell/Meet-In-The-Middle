@@ -1,0 +1,22 @@
+.selected{
+  background-color: #c5004e !important;
+}
+
+.tag{
+  /* width: 189px; */
+  cursor: pointer;
+  font-size: 18px;
+  color: white;
+  border-radius: 10px;
+  background-color: #adbcd8;
+  font-size: 18px;
+  font-weight: 600;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  text-align: center;
+  color: #ffffff;
+  padding: 5px 7px;
+  margin: 5px;
+}
