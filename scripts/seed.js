@@ -96,7 +96,7 @@ const Main = async () => {
         description: "The New Museum of Contemporary Art, founded in 1977 by Marcia Tucker, is a museum in New York City at 235 Bowery, on Manhattan's Lower East Side."
     })
 
-    const session1 = await User.create({
+    const session1 = await Session.create({
         name: "Night On The Town",
         organizer_id: 1,
         voting: true,

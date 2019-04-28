@@ -1,7 +1,6 @@
 import React from 'react'
 
-
-export const Confirmation = (props) => {
+const Confirmation = (props) => {
   return (
     <React.Fragment>
       <div>
@@ -10,3 +9,5 @@ export const Confirmation = (props) => {
     </React.Fragment>
   )
 }
+
+export default Confirmation
