@@ -12,20 +12,22 @@ import Confirmation from './components/Confirmation/Confirmation';
 import LinkPage from './components/LinkPage/LinkPage';
 import WaitingRoom from './components/WaitingRoom/WaitingRoom';
 import ResultsPage from './components/ResultsPage/ResultsPage';
-
+import Header from './components/Header/Header';
+import LandingPage from './components/LandingPage/LandingPage';
 
 
 
 class App extends Component {
   constructor(props) {
     super(props);
+
     this.state = { 
       viewIndex: 0,
      }
   }
 
   VIEWS = [
-    <ProfilePage />,
+    <LandingPage/>,
     <CreateEventPage/>,
     <Preferences/>,
     <InvitePage />,
@@ -42,17 +44,17 @@ class App extends Component {
   }
 
   nextView=() =>{
-      if(this.state.viewIndex < this.VIEWS.length-1){
-        this.setState({viewIndex: this.state.viewIndex+1})
-      }
+    if(this.state.viewIndex < this.VIEWS.length-1){
+      this.setState({viewIndex: this.state.viewIndex+1})
     }
-  
+  }
 
-  render() { 
+  render() {
     return (
+
     <div>
+      <Header />
       <div className="App">
-        Meet Me Halfway
       </div>
       {/* <Login/> */}
       <div className='card-container'>
@@ -68,5 +70,5 @@ class App extends Component {
   );
   }
 }
- 
+
 export default App;
