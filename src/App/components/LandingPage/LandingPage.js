@@ -4,7 +4,8 @@ import '../../App.css'
 
 
 
-const LandingPage = () => {
+const LandingPage = (props) => {
+  console.log(props)
   return ( 
     <div className='container-landingpage'>
       <h1 className="card-title">Profile Page</h1>
@@ -19,7 +20,7 @@ const LandingPage = () => {
     <header align="center" className = "prompts">Make a new plan!</header>
 
     <header className = "buttons">
-      <button type="submit" className='submit-landingpage'>
+      <button onClick={()=>props.nextView()} type="submit" className='submit-landingpage'>
           <img src="https://i.imgur.com/SxkYWmd.png" width="60" height="60" alt="submit" />
       </button>
 

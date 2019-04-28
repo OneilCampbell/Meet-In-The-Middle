@@ -13,6 +13,7 @@ import WaitingRoom from './components/WaitingRoom/WaitingRoom';
 import ResultsPage from './components/ResultsPage/ResultsPage';
 import Header from './components/Header/Header';
 import LandingPage from './components/LandingPage/LandingPage';
+import FinalPage from './components/FinalPage/FInalPage';
 
 class App extends Component {
   constructor(props) {
@@ -23,17 +24,7 @@ class App extends Component {
     };
   }
 
-  VIEWS = [
-    <LandingPage />,
-    <CreateEventPage />,
-    <Preferences />,
-    <InvitePage />,
-    <Confirmation />,
-    <LinkPage />,
-    <WaitingRoom />,
-    <ResultsPage />,
-    <div>End of List</div>
-  ];
+
   backView = () => {
     if (this.state.viewIndex > 0) {
       this.setState({ viewIndex: this.state.viewIndex - 1 });
@@ -45,6 +36,19 @@ class App extends Component {
       this.setState({ viewIndex: this.state.viewIndex + 1 });
     }
   };
+  VIEWS = [
+    <LandingPage
+     nextView={this.nextView}
+     />,
+    <CreateEventPage />,
+    <Preferences />,
+    <InvitePage />,
+    <Confirmation />,
+    // <LinkPage />,  
+    <WaitingRoom />,
+    <ResultsPage />,
+    <FinalPage/>
+  ];
 
   render() {
     return (
@@ -60,7 +64,7 @@ class App extends Component {
               Back
             </button>
             <button className={"nav-button"} onClick={this.nextView}>
-              Next
+              {this.state.viewIndex < this.VIEWS.length -1 ? 'Next' :'Finish'}
             </button>
           </div>
         </div>

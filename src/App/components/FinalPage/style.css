@@ -1,0 +1,14 @@
+.final-image{
+  width: 60vw;
+  margin-bottom: 100px;
+}
+.final-title{
+  font-family: "Helvetica Neue";
+}
+
+.final-container{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+}
