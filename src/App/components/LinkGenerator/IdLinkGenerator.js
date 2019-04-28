@@ -10,7 +10,7 @@ const IdLinkGenerator = (props) => {
   const guid = common.guidGen()
   
   const idLink = `wwww.meetinthemiddle.com/${props.endpoint}/${guid}`
-
+  
   return (
     <div>
       <h3>Link Generated <a href={DEFLINK}>{idLink}</a>  </h3>

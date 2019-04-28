@@ -8,11 +8,17 @@ function guidGen(){
   return guid
 }
 
+const handleChange =(event)=>{
+  const {name, value} = event.name
+
+  this.setState({[name]: value})
+}
 
 
 
 const common = {
-  guidGen: guidGen
+  guidGen: guidGen,
+  handleChange: handleChange
 }
 
 export default common
