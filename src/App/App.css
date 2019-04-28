@@ -1,15 +1,14 @@
-.card-title{
+.card-title {
   font-size: 29px;
-  font-family: HelveticaNeue;
   font-weight: bold;
 }
 
-.card-container{
+.card-container {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  
+
   /* background-color: #e2e2ff; */
   background-image: linear-gradient(to bottom, #ffffff, #e2e2ff);
   min-height: 671px;
@@ -17,15 +16,15 @@
   max-width: 100vw;
 }
 
-.footer{
-  height:96px;
+.footer {
+  height: 96px;
   width: 100vw;
   background-color: #5100b0;
 }
-.button-nav{
+.button-nav {
   display: flex;
 }
-.nav-button{
+.nav-button {
   background-color: #c5004e;
   margin: 17px;
   height: 31px;
