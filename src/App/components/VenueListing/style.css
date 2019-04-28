@@ -1,71 +1,70 @@
-.Village-Vanguard{
-    background: url("../../../Assets/Images/VillageVanguard.jpg");
-    background-size:contain;
-    background-position:center;
-    background-repeat:no-repeat;
-    width: 105px;
-    height:103px;
+.Village-Vanguard {
+  background: url("../../../Assets/Images/VillageVanguard.jpg");
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+  width: 105px;
+  height: 103px;
 }
 
-.Maialino{
-    background: url("../../../Assets/Images/Maialino.jpg");
-    background-size:contain;
-    background-position:center;
-    background-repeat:no-repeat;
-    width: 105px;
-    height: 103px; 
+.Maialino {
+  background: url("../../../Assets/Images/Maialino.jpg");
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+  width: 105px;
+  height: 103px;
 }
 
-
-
-.venue-listing{
-    width: 300px;
-    height: 270px;
-    background-color: #ffffff;
-    margin-bottom: 30px;
-    margin-left:0px;
-    padding-left:8px;
+.venue-listing {
+  width: 350px;
+  height: 270px;
+  background-color: #ffffff;
+  margin-bottom: 30px;
+  margin-left: 0px;
+  padding-left: 8px;
 }
 
-.venue-name{
-    width: 122px;
-    height: 19px;
-    font-family: HelveticaNeue;
-    font-size: 16px;
-    font-weight: bold;
-    font-style: normal;
-    font-stretch: normal;
-    line-height: normal;
-    letter-spacing: normal;
-    text-align: center;
-    color: #000000;
+.venue-name {
+  width: 122px;
+  height: 19px;
+  font-family: HelveticaNeue;
+  font-size: 16px;
+  font-weight: bold;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  text-align: center;
+  color: #000000;
 }
 
-.venue-description{
-    width: 215px;
-    height: 42px;
-    font-family: HelveticaNeue;
-    font-size: 12px;
-    font-weight: normal;
-    font-style: normal;
-    font-stretch: normal;
-    line-height: normal;
-    letter-spacing: normal;
-    color: #000000;
+.venue-description {
+  width: 215px;
+  height: 42px;
+  font-family: HelveticaNeue;
+  font-size: 12px;
+  font-weight: normal;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  color: #000000;
 }
 
-.venue-zip{
-    text-align:left;
-    margin-bottom:20px;
-    justify-content: left;
+.venue-zip {
+  text-align: left;
+  margin-bottom: 20px;
+  justify-content: left;
 }
 
-.venue, .venue-tags{
-    display: flex;
-    flex-wrap: wrap;
+.venue,
+.venue-tags {
+  display: flex;
+  flex-wrap: wrap;
 }
 
-.venue-tag-intro{
-    margin-bottom: 10px;
-    font-size: 16px;
+.venue-tag-intro {
+  margin-bottom: 10px;
+  font-size: 16px;
 }
