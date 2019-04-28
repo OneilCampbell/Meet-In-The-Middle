@@ -14,7 +14,6 @@ class App extends Component {
     super(props);
     this.state = { 
       viewIndex: 0,
-      currentView: this.VIEWS[this.state.index]
      }
   }
 
@@ -26,7 +25,6 @@ class App extends Component {
     if(this.state.viewIndex > 0){
       this.setState({viewIndex: this.state.viewIndex+1})
     }
-    
   }
 
   nextView=() =>{
