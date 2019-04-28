@@ -14,25 +14,29 @@ const User = db.define("user", {
   username: Sequelize.TEXT,
   password: Sequelize.TEXT,
   preferences: DataTypes.ARRAY(DataTypes.TEXT),
-  location: Sequelize.TEXT
+  location: Sequelize.TEXT,
+  session_id: Sequelize.INTEGER
 });
 
-const Venues = db.define("venue", {
+const Venue = db.define("venue", {
   name: Sequelize.TEXT,
   street_address: Sequelize.TEXT,
   city: Sequelize.TEXT,
   state: Sequelize.TEXT,
   zip_code: Sequelize.INTEGER,
-  description_tags: DataTypes.ARRAY(DataTypes.TEXT)
+  description_tags: DataTypes.ARRAY(DataTypes.TEXT),
+  description: Sequelize.TEXT
 })
 
 const Session = db.define("sessions", {
-  name: Sequelize.TEXT
+  name: Sequelize.TEXT,
+  organizer_id: Sequelize.INTEGER,
+  voting: Sequelize.BOOLEAN,
+  number_of_voters: Sequelize.INTEGER,
+  custom_venues: DataTypes.ARRAY(DataTypes.TEXT),
+  area: Sequelize.TEXT,
+  generated_venues: DataTypes.ARRAY(DataTypes.JSONB)
 })
 
 
-
-
-
-
-module.exports={ db }
+module.exports={ db, User, Venue, Session }
