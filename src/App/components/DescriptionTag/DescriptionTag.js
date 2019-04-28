@@ -6,7 +6,7 @@ import { statSync } from 'fs';
 class DescriptionTag extends Component {
   constructor(props) {
     super(props);
-    this.state = { selected: false }
+    this.state = { selected: this.props.defaultSelected }
   }
   render() { 
     return ( 

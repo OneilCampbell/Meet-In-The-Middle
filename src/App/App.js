@@ -16,7 +16,6 @@ import Header from './components/Header/Header';
 import LandingPage from './components/LandingPage/LandingPage';
 
 
-
 class App extends Component {
   constructor(props) {
     super(props);

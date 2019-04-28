@@ -14,5 +14,5 @@ const WaitingRoom = () => {
     </div>
    );
 }
- 
+
 export default WaitingRoom;
