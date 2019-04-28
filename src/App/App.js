@@ -12,6 +12,7 @@ import Confirmation from './components/Confirmation/Confirmation';
 import LinkPage from './components/LinkPage/LinkPage';
 import WaitingRoom from './components/WaitingRoom/WaitingRoom';
 import ResultsPage from './components/ResultsPage/ResultsPage';
+import Header from './components/Header/Header';
 
 
 
@@ -42,17 +43,16 @@ class App extends Component {
   }
 
   nextView=() =>{
-      if(this.state.viewIndex < this.VIEWS.length-1){
-        this.setState({viewIndex: this.state.viewIndex+1})
-      }
+    if(this.state.viewIndex < this.VIEWS.length-1){
+      this.setState({viewIndex: this.state.viewIndex+1})
     }
-  
+  }
 
   render() { 
     return (
     <div>
+      <Header />
       <div className="App">
-        Meet Me Halfway
       </div>
       {/* <Login/> */}
       <div className='card-container'>

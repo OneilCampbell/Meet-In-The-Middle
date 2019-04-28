@@ -2,7 +2,7 @@ import React from 'react'
 import "./style.css";
 
 const WaitingRoom = () => {
-  return ( 
+  return (
     <div className="card-container">
       <p className="card-title">Where will you meet?</p>
       <div className="waiting-room-image" />
