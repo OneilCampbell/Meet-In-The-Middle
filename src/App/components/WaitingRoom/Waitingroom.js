@@ -18,7 +18,7 @@ const WaitingRoom = () => {
       <p className="send-a-text">We'll send you a text</p>
       <button className="waiting-page-submit">Submit</button>
     </div>
-  );
-};
+   );
+}
 
 export default WaitingRoom;

@@ -64,20 +64,21 @@ class Preferences extends Component {
         <h1 className="card-title">Choose preferences</h1>
         <h3 className="pick-subheading">pick all that apply</h3>
         <div>
-          <h3 className="preference-heading">What do you want to hear?</h3>
-          <PrefBox prefList={this.hearArray} />
+        <h3 className='preference-heading'>What do you want to hear?</h3>
+        <PrefBox prefList={this.hearArray} defaultSelected={false}/>
         </div>
         <div>
-          <h3 className="preference-heading">What do you want to eat?</h3>
-          <PrefBox prefList={this.eatArray} />
+        <h3 className='preference-heading'>What do you want to eat?</h3>
+        <PrefBox prefList={this.eatArray} defaultSelected={false}/>
         </div>
         <div>
-          <h3 className="preference-heading">What do you want to do?</h3>
-          <PrefBox prefList={this.doArray} />
+        <h3 className='preference-heading'>What do you want to do?</h3>
+        <PrefBox prefList={this.doArray} defaultSelected={false}/>
         </div>
         <div>
-          <h3 className="preference-heading">What do you want to drink?</h3>
-          <PrefBox prefList={this.drinkArray} />
+        <h3 className='preference-heading'>What do you want to drink?</h3>
+        <PrefBox prefList={this.drinkArray} sdefaultSelected={false} />
+
         </div>
       </div>
     );
