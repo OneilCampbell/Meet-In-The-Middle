@@ -7,7 +7,7 @@ function InvitePage(props) {
       <div className="invite-page-icon-image-wrapper">
         <img />
       </div>
-      <select>
+      <select className="invite-page-invitees">
         <option>1</option>
         <option>2</option>
         <option>3</option>
@@ -16,10 +16,6 @@ function InvitePage(props) {
         <option>6</option>
         <option>7</option>
       </select>
-      <div className="invite-page-buttons">
-        <button type="button">Back</button>
-        <button type="button">Next</button>
-      </div>
     </div>
   );
 }
