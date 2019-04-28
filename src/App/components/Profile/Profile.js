@@ -3,8 +3,12 @@ import React from 'react'
 import '../../App.css'
 
 const ProfilePage = () => {
-  return ( 
-      <div className="card-title">Profile Page</div>
+  return (
+    <div>
+      <h1 className="card-title">Profile Page</h1>
+
+      
+    </div>
    );
 }
  

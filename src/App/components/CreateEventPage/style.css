@@ -2,7 +2,6 @@ html {
   min-height:100%;
 }
 body {
-padding-top: 50px;
 display: flex;
 justify-content: center;
 background-image: linear-gradient(to bottom, #ffffff, #e2e2ff);
