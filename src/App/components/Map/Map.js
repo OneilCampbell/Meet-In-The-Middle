@@ -3,6 +3,7 @@ import ReactMapGL, { Marker } from "react-map-gl";
 import "mapbox-gl/dist/mapbox-gl.css";
 import "./style.css";
 import Axios from "axios";
+import place from "./place.png";
 const API_KEY =
   "pk.eyJ1IjoiYmVzdGFubHkiLCJhIjoiY2pxdHpteW55MDEzazQzcWp1eThieGE2NyJ9.b22fYf0b0DatwKulWWzNLg";
 const OPEN_CAGE_API = "22a610e878824282b19af539b55299dd";
@@ -125,7 +126,7 @@ class Map extends Component {
                 //   anchor="top"
                 //   onClose={() => {}}
               >
-                <i className="fas fa-street-view" />
+                <i class="fas fa-street-view" />
               </Marker>
             );
           })}
@@ -143,7 +144,7 @@ class Map extends Component {
                 //   anchor="top"
                 //   onClose={() => {}}
               >
-                <i className="fas fa-map-marker-alt" />
+                <img src={place} alt={latitude} width="20" height="20" />
               </Marker>
             );
           })}
