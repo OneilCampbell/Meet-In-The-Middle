@@ -13,7 +13,7 @@ class App extends Component {
     super(props);
     this.state = { 
       viewIndex: 0,
-      currentView: VIEWS[this.state.index]
+      currentView: this.VIEWS[this.state.index]
      }
   }
 
@@ -23,14 +23,14 @@ class App extends Component {
   ]
   backView=()=>{
     if(this.state.viewIndex > 0){
-      this.setState({viewIndex: viewIndex+1})
+      this.setState({viewIndex: this.state.viewIndex+1})
     }
     
   }
 
   nextView=() =>{
       if(this.state.viewIndex > 0){
-        this.setState({viewIndex: viewIndex+1})
+        this.setState({viewIndex: this.state.viewIndex+1})
       }
     }
   
