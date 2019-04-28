@@ -6,8 +6,31 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-items: center;
 }
 .invite-page-title {
   text-align: center;
+  font-size: 24px;
+  font-weight: bold;
+}
+.invite-page-invitees {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  text-overflow: "";
+  background: url("https://i.imgur.com/8boxXNJ.png") no-repeat 90% 50%;
+  padding-left: 10px;
+  margin: 8px;
+  margin-bottom: 43px;
+  width: 124px;
+  height: 37px;
+  border-radius: 10px;
+  background-color: #adbcd8;
+  text-align: center;
+  color: white;
+  font-size: 18px;
+  font-weight: 600;
+  padding-left: 35px;
+}
+.invite-page-icon-image-wrapper {
+  margin: 43.3px;
 }
