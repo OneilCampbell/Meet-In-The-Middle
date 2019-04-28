@@ -10,7 +10,8 @@ import Preferences from './components/Preferences/Preferences';
 import InvitePage from './components/InvitePage/InvitePage';
 import Confirmation from './components/Confirmation/Confirmation';
 import LinkPage from './components/LinkPage/LinkPage';
-import WaitingRoom from './components/WaitingRoom/Waitingroom';
+import WaitingRoom from './components/WaitingRoom/WaitingRoom';
+import ResultsPage from './components/ResultsPage/ResultsPage';
 
 
 
@@ -30,18 +31,19 @@ class App extends Component {
     <InvitePage />,
     <Confirmation />,
     <LinkPage />,
-    <WaitingRoom />,  
-    
+    <WaitingRoom />,
+    <ResultsPage />,
+    <div>End of List</div>
   ]
   backView=()=>{
     if(this.state.viewIndex > 0){
-      this.setState({viewIndex: this.state.viewIndex+1})
+      this.setState({viewIndex: this.state.viewIndex-1})
     }
   }
 
   nextView=() =>{
-      if(this.state.viewIndex <= this.VIEWS.length){
-        this.setState({viewIndex: this.state.viewIndex-1})
+      if(this.state.viewIndex < this.VIEWS.length-1){
+        this.setState({viewIndex: this.state.viewIndex+1})
       }
     }
   
@@ -54,7 +56,6 @@ class App extends Component {
       </div>
       <Login/>
       {this.VIEWS[this.state.viewIndex]}
-      <SessionMaker/>
 
       <button onClick={this.backView}>Back</button>
       <button onClick={this.nextView}>Next</button>
