@@ -3,6 +3,7 @@ import "./style.css";
 import "../../App.css";
 
 const WaitingRoom = () => {
+
   return ( 
     <div className="waiting-room">
       <p className="card-title where-to-meet">Where will you meet?</p>
