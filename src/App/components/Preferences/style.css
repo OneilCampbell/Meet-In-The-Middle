@@ -1,5 +1,4 @@
-.preference-heading{
-  font-family: HelveticaNeue;
+.preference-heading {
   font-size: 16px;
   color: #000000;
   font-weight: bold;
@@ -11,8 +10,8 @@
   padding: 30px;
   align-items: center;
 }
-.pick-subheading{
-  font-family: HelveticaNeue;
+.pick-subheading {
+  font-family: "Helvetica Neue";
   font-size: 16px;
   color: #000000;
   font-weight: 300;
