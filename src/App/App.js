@@ -13,6 +13,7 @@ import LinkPage from './components/LinkPage/LinkPage';
 import WaitingRoom from './components/WaitingRoom/WaitingRoom';
 import ResultsPage from './components/ResultsPage/ResultsPage';
 import Header from './components/Header/Header';
+import LandingPage from './components/LandingPage/LandingPage';
 
 
 
@@ -26,7 +27,7 @@ class App extends Component {
   }
 
   VIEWS = [
-    <ProfilePage />,
+    <LandingPage/>,
     <CreateEventPage/>,
     <Preferences/>,
     <InvitePage />,
