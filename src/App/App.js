@@ -1,18 +1,18 @@
-import React, { Component } from "react";
-import "./App.css";
-import { SessionMaker } from "./components/SessionMaker/SessionMaker";
-import Login from "./components/Login/Login";
-import Profile from "./components/Profile/Profile";
-import ProfilePage from "./components/Profile/Profile";
-import CreateEventPage from "./components/CreateEventPage/CreateEventPage";
-import Preferences from "./components/Preferences/Preferences";
-import InvitePage from "./components/InvitePage/InvitePage";
-import Confirmation from "./components/Confirmation/Confirmation";
-import LinkPage from "./components/LinkPage/LinkPage";
-import WaitingRoom from "./components/WaitingRoom/WaitingRoom";
-import ResultsPage from "./components/ResultsPage/ResultsPage";
-import Header from "./components/Header/Header";
-import LandingPage from "./components/LandingPage/LandingPage";
+import React, { Component } from 'react';
+import './App.css';
+import { SessionMaker } from './components/SessionMaker/SessionMaker';
+import Login from './components/Login/Login';
+import Profile from './components/Profile/Profile'
+import ProfilePage from './components/Profile/Profile';
+import CreateEventPage from './components/CreateEventPage/CreateEventPage';
+import Preferences from './components/Preferences/Preferences';
+import InvitePage from './components/InvitePage/InvitePage';
+import Confirmation from './components/Confirmation/Confirmation';
+import LinkPage from './components/LinkPage/LinkPage';
+import WaitingRoom from './components/WaitingRoom/WaitingRoom';
+import ResultsPage from './components/ResultsPage/ResultsPage';
+import Header from './components/Header/Header';
+import LandingPage from './components/LandingPage/LandingPage';
 
 class App extends Component {
   constructor(props) {

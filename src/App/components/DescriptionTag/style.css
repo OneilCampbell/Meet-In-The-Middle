@@ -3,7 +3,6 @@
 }
 
 .tag{
-  /* width: 189px; */
   cursor: pointer;
   font-size: 18px;
   color: white;
@@ -16,7 +15,6 @@
   line-height: normal;
   letter-spacing: normal;
   text-align: center;
-  color: #ffffff;
   padding: 5px 7px;
   margin: 5px;
 }
