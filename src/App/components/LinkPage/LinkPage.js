@@ -6,5 +6,5 @@ const LinkPage = () => {
     LinkPage
   </div> );
 }
- 
+
 export default LinkPage;
