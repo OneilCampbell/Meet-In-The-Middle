@@ -1,9 +1,8 @@
 import React, { Component } from "react";
-import ReactMapGL, { Marker, Popup } from "react-map-gl";
+import ReactMapGL, { Marker } from "react-map-gl";
 import "mapbox-gl/dist/mapbox-gl.css";
 import "./style.css";
 import Axios from "axios";
-import userIcon from "./user-icon.ico";
 const API_KEY =
   "pk.eyJ1IjoiYmVzdGFubHkiLCJhIjoiY2pxdHpteW55MDEzazQzcWp1eThieGE2NyJ9.b22fYf0b0DatwKulWWzNLg";
 const OPEN_CAGE_API = "22a610e878824282b19af539b55299dd";
@@ -101,12 +100,7 @@ class Map extends Component {
     });
   };
   render() {
-    const {
-      areUsersLoaded,
-      areVenuesLoaded,
-      userCoords,
-      venueCoords
-    } = this.state;
+    const { areUsersLoaded, areVenuesLoaded } = this.state;
     console.log(this.state);
 
     return areUsersLoaded && areVenuesLoaded ? (
