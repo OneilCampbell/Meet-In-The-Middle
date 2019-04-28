@@ -1,9 +1,18 @@
 import React from 'react';
+import DescriptionTag from '../DescriptionTag/DescriptionTag';
+import './style.css'
+import '../../App.css'
 
-const PrefBox = () => {
+
+const PrefBox = (props) => {
+  
+  const prefList = props.prefList.map((pref, index)=>{
+    return <DescriptionTag pref={pref} id= {'item'+index} />
+  })
+  
   return ( 
-    <div>
-      PrefBox
+    <div className='prefbox-container'>
+      {prefList}
     </div>
    );
 }

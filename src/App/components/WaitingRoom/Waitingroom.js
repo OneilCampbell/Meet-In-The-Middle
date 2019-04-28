@@ -1,9 +1,15 @@
 import React from 'react'
+import "./style.css";
 
 const WaitingRoom = () => {
-  return ( 
-    <div>
-      WaitingRoom
+  return (
+    <div className="card-container">
+      <p className="card-title">Where will you meet?</p>
+      <div className="waiting-room-image" />
+      <p className="want-to-be-notified">Want to be notified when everyone has responded?</p>
+      <input className="phone-number-text-box" type="text" placeholder="Enter your phone number" />
+      <p className="send-a-text">We'll send you a text</p>
+      <button className="waiting-page-submit">Submit</button>
     </div>
    );
 }

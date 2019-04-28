@@ -1,0 +1,21 @@
+.preference-heading{
+  font-family: HelveticaNeue;
+  font-size: 16px;
+  color: #000000;
+  font-weight: bold;
+}
+
+
+.preference-container{
+  display: flex;
+  flex-direction: column;
+  padding: 30px;
+  align-items: center;
+}
+.pick-subheading{
+  font-family: HelveticaNeue;
+  font-size: 16px;
+  color: #000000;
+  font-weight: 300;
+  margin: 0px;
+}

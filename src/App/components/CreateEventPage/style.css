@@ -1,0 +1,86 @@
+html {
+  min-height:100%;
+}
+body {
+display: flex;
+justify-content: center;
+background-image: linear-gradient(to bottom, #ffffff, #e2e2ff);
+
+}
+
+p {
+font-size: 24px;
+font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+font-weight: bold;
+display: flex;
+justify-content: center;
+margin-bottom: 35px;
+}
+
+.create-event-input {
+background-color: #ffffff;
+font-size: 16px;
+border-color: #595a6d;
+border-width: 1px;
+width: 253px;
+height: 51px;
+border-radius: 3px;
+font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+font-weight: 500;
+margin: 8px;
+}
+::placeholder {
+color:black;
+padding-left: 14px;
+}
+
+
+.create-event-form{
+display: flex;
+flex-direction: column;
+}
+
+.create-event-select {
+-webkit-appearance: none;
+-moz-appearance: none;
+appearance: none;
+text-overflow: '';
+background: url("https://i.imgur.com/8boxXNJ.png") no-repeat 90% 50%; 
+padding-left: 10px;
+margin: 8px;
+
+background-color: #ffffff;
+color: black;
+font-size: 16px;
+border-color: #595a6d;
+border-width: 1px;
+width: 254px;
+height: 51px;
+border-radius: 3px;
+font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+}
+
+.inputb {
+margin-bottom: 43px;
+}
+
+button {
+
+background-color: #c5004e;
+border-color: #595a6d;
+border-width: 1px;
+color: white;
+text-align: center;
+text-decoration: none;
+display: inline-block;
+width: 64px;
+height: 31px;
+font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+font-size: 20px;
+
+cursor: pointer;
+}
+.button1 {
+margin-left: 45px;
+margin-right: 34px;
+}
