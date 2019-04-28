@@ -1,11 +1,10 @@
 import React from 'react'
 
+import '../../App.css'
 
 const ProfilePage = () => {
   return ( 
-    <div>
-      Profile Page
-    </div>
+      <div className="card-title">Profile Page</div>
    );
 }
  
