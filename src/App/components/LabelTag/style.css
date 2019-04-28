@@ -1,0 +1,9 @@
+.result-tag{
+    height: 15px;
+    border-radius: 3px;
+    background-color: #c5004e;
+    padding:9px;
+    padding-top:5px;
+    margin-left:3px;
+    color:#ffffff;
+}
